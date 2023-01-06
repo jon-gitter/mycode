@@ -27,38 +27,44 @@ if intro == "y" or intro == "yes":
   #first function
   def firstquestion():
     time.sleep(1.5)
-    print(questions["question1"])
+    print("\n", questions["question1"])
     for x in answers["question1"]:
       print(x)
     user_answer1= input("Enter choice: ").lower()
-    if user_answer1 == "b":
+    if user_answer1 == "b" or user_answer1 == "tippet":
       print("Correct!")
     elif user_answer1 == "a" or user_answer1 == "c" or user_answer1 == "d":
+      print("Incorrct, the right answer was B: tippet")
+    else:
       print("Incorrct, the right answer was B: tippet")
       
   #second function   
   def secondquestion():
     time.sleep(1.5)
-    print(questions["question2"])
+    print("\n", questions["question2"])
     for x in answers["question2"]:
       print(x)
     user_answer1= input("Enter choice: ").lower()
-    if user_answer1 == "a":
+    if user_answer1 == "a" or user_answer1 == "dry fly":
       print("Correct!")
     elif user_answer1 == "b" or user_answer1 == "c" or user_answer1 == "d":
+      print("Incorrct, the right answer was A: dry fly")
+    else:
       print("Incorrct, the right answer was A: dry fly")
       
   #third function
   def thirdquestion():
     time.sleep(1.5)
-    print(questions["question3"])
+    print("\n", questions["question3"])
     for x in answers["question3"]:
       print(x)
     user_answer1= input("Enter choice: ").lower()
-    if user_answer1 == "d":
+    if user_answer1 == "d" or user_answer1 == "strike indicator":
       print("Correct!")
     elif user_answer1 == "a" or user_answer1 == "b" or user_answer1 == "c":
       print("Incorrct, the right answer was D: strike indicator") 
+    else:
+      print("Incorrct, the right answer was D: strike indicator")
       
   #function calls
   firstquestion()
@@ -82,37 +88,43 @@ else:
     #first function of bad answer inside while loop
       def firstquestion():
         time.sleep(1.5)
-        print(questions["question1"])
+        print("\n", questions["question1"])
         for x in answers["question1"]:
           print(x)
         user_answer1= input("Enter choice: ").lower()
-        if user_answer1 == "b":
+        if user_answer1 == "b" or user_answer1 == "tippet":
           print("Correct!")
         elif user_answer1 == "a" or user_answer1 == "c" or user_answer1 == "d":
+          print("Incorrct, the right answer was B: tippet")
+        else:
           print("Incorrct, the right answer was B: tippet")
       
     #second function of bad answer inside while loop   
       def secondquestion():
         time.sleep(1.5)
-        print(questions["question2"])
+        print("\n", questions["question2"])
         for x in answers["question2"]:
           print(x)
         user_answer1= input("Enter choice: ").lower()
-        if user_answer1 == "a":
+        if user_answer1 == "a" or user_answer1 == "dry fly":
           print("Correct!")
         elif user_answer1 == "b" or user_answer1 == "c" or user_answer1 == "d":
+          print("Incorrct, the right answer was A: dry fly")
+        else:
           print("Incorrct, the right answer was A: dry fly")
       
       #third function of bad answer inside while loop
       def thirdquestion():
         time.sleep(1.5)
-        print(questions["question3"])
+        print("\n", questions["question3"])
         for x in answers["question3"]:
           print(x)
         user_answer1= input("Enter choice: ").lower()
-        if user_answer1 == "d":
+        if user_answer1 == "d" or user_answer1 == "strike indicator":
           print("Correct!")
         elif user_answer1 == "a" or user_answer1 == "b" or user_answer1 == "c":
+          print("Incorrct, the right answer was D: strike indicator") 
+        else:
           print("Incorrct, the right answer was D: strike indicator") 
           
       #function calls inside while loop
@@ -132,7 +144,7 @@ else:
 
 
       
-############################################## OLD CODE #######################################
+###########################OLD CODE##################################
 
 question1= {"question": "In fly fishing, what is the thinnest section of line called that's directly tied to the fly?",
   "leader": False,
@@ -154,3 +166,8 @@ question3= {"question": "In fly fishing, what floats on the water and is used to
   "bite monitor": False,
   "strike indicator": True
   }
+
+
+
+
+
